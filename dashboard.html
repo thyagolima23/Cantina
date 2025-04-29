@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="dashboard-page">
+    <header>
+        <h1>Cardapio da semana</h1>
+        <button id="logout-btn">Sair</button>
+    </header>
+    <main class="dashboard-content">
+        <section id="cardapio-lista">
+            <h2>Refeições cadastradas</h2>
+            <div id="lista-de-refeicoes"></div>
+        </section>
+        <section id="form-refeicao">
+            <h2>Nova Refeição</h2>
+            <form id="refeicao-form">
+                <label for="dia">Dia da semana:</label>
+                <select id="dia" name="dia" required>
+                    <option value="">Selecione um dia</option>
+                    <option value="segunda">Segunda-feira</option>
+                    <option value="terca">Terça-feira</option>
+                    <option value="quarta">Quarta-feira</option>
+                    <option value="quinta">Quinta-feira</option>
+                    <option value="sexta">Sexta-feira</option>
+                    <option value="sabado">Sábado</option>
+                </select>
+                <label for="turno">Turno</label>
+                <select id="turno" name="turno" required>
+                    <option value="">Selecione um turno</option>
+                    <option value="manha">Manhã</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noite">Noite</option>
+
+                </select>
+                <label for="cardapio">Cardapio</label>
+                <textarea id="cardapio" name="cardapio" rows="8" required></textarea>
+
+                <label for="img">Imagem do prato</label>
+                
+                
+                
+                
+                <button type="submit">Adicionar Refeição</button>
+        </section>
+        
+        
+    </main>
+    <script type="module" src="js/dashboard.js"></script>
+</body>
+</html>
